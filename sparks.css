@@ -1,0 +1,20 @@
+.spark {
+position: absolute;
+width: 16px; 
+height: 16px; 
+background: red;
+box-shadow: 0 0 10px red, 0 0 20px #900;
+pointer-events: none;
+animation: spark-fly 600ms linear forwards; 
+}
+
+@keyframes spark-fly {
+from {
+opacity: 1;
+transform: translate(0, 0) scale(1);
+}
+to {
+opacity: 0;
+transform: translate(var(--x), var(--y)) scale(0.5);
+}
+}
