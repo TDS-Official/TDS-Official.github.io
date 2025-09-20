@@ -17,7 +17,7 @@
  </div>
  <div class="nav-center">
   <a href="index.html">Home</a>
-  <a href="devlog1.html">Fishing Game</a>
+  <a href="devlog1.html">Game</a>
   <a href="about.html">About</a>
  </div>
 </nav>
@@ -41,8 +41,16 @@
 <!-- Footer -->
 <footer>
  <p>© 2025 TDS. All rights reserved.</p>
+  <button id="secretBtn" style="background:none; border:none; font-size:0.8rem; color:gray; cursor:pointer;">
+   •
+  </button>
 </footer>
+
+<script>
+ document.getElementById("secretBtn").addEventListener("click", function() {
+ window.location.href = "secretarcade.html";
+ });
+</script>
 
 </body>
 </html>
-
